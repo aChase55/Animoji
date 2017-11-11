@@ -10,11 +10,15 @@ import UIKit
 import Animoji
 
 class ViewController: UIViewController {
-
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        FrameworkLoader.loadFramework()
+    }
+    
     @IBOutlet weak var animoji: Animoji! {
         didSet {
             animoji.setPuppet(name: .cat)
         }
     }
-    
 }

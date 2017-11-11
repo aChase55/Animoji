@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40512B751FB7BC6900510E73 /* FrameworkLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 40512B741FB7BC6900510E73 /* FrameworkLoader.m */; };
 		710F67151FB54D1C0077FBD7 /* Animoji.h in Headers */ = {isa = PBXBuildFile; fileRef = 710F67131FB54D1C0077FBD7 /* Animoji.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		712B62BC1FB6B01700F55487 /* AvatarKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 712B62BB1FB6B01700F55487 /* AvatarKit.framework */; };
 		712B62BD1FB6B02A00F55487 /* AvatarKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 712B62BB1FB6B01700F55487 /* AvatarKit.framework */; };
@@ -50,6 +51,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		40512B721FB7BC6900510E73 /* Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Example-Bridging-Header.h"; sourceTree = "<group>"; };
+		40512B731FB7BC6900510E73 /* FrameworkLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FrameworkLoader.h; sourceTree = "<group>"; };
+		40512B741FB7BC6900510E73 /* FrameworkLoader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FrameworkLoader.m; sourceTree = "<group>"; };
 		710F67101FB54D1C0077FBD7 /* Animoji.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Animoji.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		710F67131FB54D1C0077FBD7 /* Animoji.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Animoji.h; sourceTree = "<group>"; };
 		710F67141FB54D1C0077FBD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -150,6 +154,9 @@
 				7182739C1FB54E4100635687 /* Assets.xcassets */,
 				7182739E1FB54E4100635687 /* LaunchScreen.storyboard */,
 				718273A11FB54E4100635687 /* Info.plist */,
+				40512B731FB7BC6900510E73 /* FrameworkLoader.h */,
+				40512B741FB7BC6900510E73 /* FrameworkLoader.m */,
+				40512B721FB7BC6900510E73 /* Example-Bridging-Header.h */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -226,6 +233,7 @@
 					};
 					718273921FB54E4100635687 = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -285,6 +293,7 @@
 			files = (
 				718273981FB54E4100635687 /* ViewController.swift in Sources */,
 				718273961FB54E4100635687 /* AppDelegate.swift in Sources */,
+				40512B751FB7BC6900510E73 /* FrameworkLoader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,6 +496,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = NNRNHY2N8B;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -496,6 +506,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.efremidze.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Example/Example-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -506,6 +518,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = NNRNHY2N8B;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -515,6 +528,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.efremidze.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Example/Example-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
